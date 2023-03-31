@@ -3,13 +3,12 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
-import CMS from 'netlify-cms-app';
-import { de } from 'netlify-cms-locales';
+// import CMS from 'netlify-cms-app';
+// import { de } from 'netlify-cms-locales';
+
+// CMS.registerLocale('de', de);
 
 module.exports = function (eleventyConfig) {
-
-  CMS.registerLocale('de', de);
-  
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
